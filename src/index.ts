@@ -1,7 +1,7 @@
 async function main() {
 	const args = process.argv.slice(2);
 	if (args.length < 1) {
-		console.log("Usage: npx co-author-cli <github-user> <github-user(name)>");
+		console.log("Usage: npx coauthors-cli <github-user or github-user(name)>");
 		process.exit(1);
 	}
 	const authors = await parseAuthors(args);
